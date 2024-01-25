@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #316fb1;
   padding: 50px;
   display: flex;
   justify-content: center;
@@ -15,21 +15,27 @@ body {
 }
 
 h2 {
+  color: #909090;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 label {
-  font-weight: bold;
+  color: #909090;
+  text-transform: uppercase;
+  margin-left: 5px;
 }
 
 input {
-  width: 95%;
+  width: 93%;
   padding: 10px;
-  margin: 10px 0;
+  margin: 5px 0;
   border-radius: 5px;
   border: 1px solid #ccc;
   margin-bottom: 30px;
+  background-color: #c6deffe8;
+  outline: none;
+  border: none;
 }
 
 button {
@@ -39,6 +45,7 @@ button {
   padding: 10px;
   border: none;
   border-radius: 5px;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -47,9 +54,8 @@ button:hover {
 }
 
 p {
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
-  color: #007BFF;
+  color: #316fb1;
   margin-top: 20px;
 }
-  
