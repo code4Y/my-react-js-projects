@@ -23,14 +23,16 @@ h2 {
 
 #interest h2 {
   background: greenyellow;
+  border-radius: 5px;
   color: #1e1e1e;
   padding: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 label {
   color: #909090;
-  margin-left: 5px;
+  margin-left: 2px;
+  font-size: 14px;
 }
 
 input {
@@ -39,7 +41,7 @@ input {
   margin: 5px 0;
   border-radius: 5px;
   border: 1px solid #ccc;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   background-color: #edf5ffe8;
   outline: none;
   border: none;
