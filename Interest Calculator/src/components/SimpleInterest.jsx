@@ -15,7 +15,7 @@ function SimpleInterest() {
 
   return (
     <div className="bgFloat">
-      <h2>Simple Interest Calculator</h2>
+      <h2>Simple Interest</h2>
       <label id="interest">
         Calculated Simple Interest is 
         <h2>Rs. {interest}</h2>

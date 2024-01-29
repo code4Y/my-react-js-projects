@@ -16,7 +16,7 @@ function CompoundInterest() {
 
   return (
     <div className="bgFloat">
-      <h2>Compound Interest Calculator</h2>
+      <h2>Compound Interest</h2>
       <label id="interest">
         Calculated Compound Interest is 
         <h2>Rs. {interest}</h2>

@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={() => setShowSimpleInterest(!showSimpleInterest)}>
+      <button className="Toggle" onClick={() => setShowSimpleInterest(!showSimpleInterest)}>
         Switch to {showSimpleInterest ? 'Compound Interest' : 'Simple Interest'}
       </button>
       {showSimpleInterest ? <SimpleInterest /> : <CompoundInterest />}
