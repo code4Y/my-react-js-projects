@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #ccc;
+  background: #ededed;
   font-family: sans-serif;
 }
 
@@ -22,14 +22,24 @@ body {
   color: #484848;
 }
 
+.nav a:hover {
+  background: #363636;
+  color: #fff;
+  border-radius: 7px;
+  transition: all .4s ease-in;
+}
+
 .nav a:active {
   font-weight: bold;
 }
 
 .About {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #fff;
-  height: 10vh;
+  text-align: center;
+  margin: 0 auto;
+  width: 600px;
+  height: 100vh;
 }
