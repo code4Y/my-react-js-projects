@@ -1,3 +1,4 @@
+import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -8,7 +9,7 @@ function App() {
     // Use Router to enable routing
     <Router>
       {/* // Use Link to create navigation links */}
-      <div>
+      <div className='nav'>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
