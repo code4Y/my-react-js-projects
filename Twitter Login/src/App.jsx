@@ -14,6 +14,19 @@ function App() {
           <img src="./apple.png" alt="logo" />
           Sign in with Apple
         </button>
+
+        <hr />
+        <span>Or</span>
+
+        <form>
+          <input type="text" placeholder='Phone, email or username' />
+          <button>Next</button>
+        </form>
+
+        <button>Forget Password</button>
+        <p>
+          Don't have an account <a>Sign up</a>
+        </p>
       </div>
     </div>
   )
