@@ -32,7 +32,17 @@ function App() {
           </button>
         </div>
       </nav>
-      
+
+
+      <div className="content">
+        <div className="hero-text">
+          <p className="content-para">Trusted by over 570+ companies</p>
+          <h1>Find Your <span className="content-span">Remote Job</span> </h1>
+          <h1>Easy And Fast.</h1>
+          <p className="content-alice">A Platform where you can get desired job without any hassel</p>
+        </div>
+      </div>
+
     </div>
   )
 }

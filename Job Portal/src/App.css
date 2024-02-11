@@ -63,3 +63,40 @@ nav li a:hover {
   color: #fff;
   font-weight: 600;
 }
+
+/* Hero Section */
+.content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+.content-para {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.content h1 {
+  color: #000;
+  font-family: Alice;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.content-span {
+  color: #01A944;
+  font-family: Alice;
+}
+
+.content-alice {
+  color: #000;
+  font-family: Alice;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
