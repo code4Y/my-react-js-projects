@@ -40,6 +40,12 @@ function App() {
           <h1>Find Your <span className="content-span">Remote Job</span> </h1>
           <h1>Easy And Fast.</h1>
           <p className="content-alice">A Platform where you can get desired job without any hassel</p>
+
+          <form>
+            <input type="text" placeholder='Your Email Address' />
+            <button type='submit' className='btn-sub'>Submit</button>
+          </form>
+
         </div>
       </div>
 
