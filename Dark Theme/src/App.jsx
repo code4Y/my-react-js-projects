@@ -1,9 +1,12 @@
 import './App.css'
 
-function App() {
 
+function App() {
   return (
-    <div>
+    <div className='App'>
+      <header className="App-header">
+
+      </header>
       <h1>Theme Toggler</h1>
     </div>
   )
