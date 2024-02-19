@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './App.css';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 
 function App() {
   const [counter, setCounter] = useState(0);
@@ -36,16 +38,18 @@ function App() {
           </div>
 
           <div className="card_text">
-            <h3 className="total_amount_heading">1</h3>
+            <h3 className="total_amount_heading">0</h3>
           </div>
 
         </div>
 
         {/* Buttons */}
-
         <form>
           <div className="button_collection">
-            
+            <Stack spacing={2} direction="row">
+            <Button variant="contained" className='btn_one'>+</Button>
+            <Button variant="contained" className='btn_two'>-</Button>
+            </Stack>
           </div>
         </form>
       </div>
