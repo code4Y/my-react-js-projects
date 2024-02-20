@@ -11,16 +11,15 @@ function App() {
   }
    
   const handleClick2 = () => {
- 
     if(counter === 0)
     {
       return 0;
     }
-     
     else {
-    setCounter(counter - 1)
+      setCounter(counter - 1)
     }
   }
+  
   const handleClick3 = () => {
     // Counter state is incremented
     setCounter(counter == 0);
@@ -38,7 +37,7 @@ function App() {
           </div>
 
           <div className="card_text">
-            <h3 className="total_amount_heading">0</h3>
+            <h3 className="total_amount_heading">{counter}</h3>
           </div>
 
         </div>
@@ -47,8 +46,8 @@ function App() {
         <form>
           <div className="button_collection">
             <Stack spacing={2} direction="row">
-            <Button variant="contained" className='btn_one'>+</Button>
-            <Button variant="contained" className='btn_two'>-</Button>
+            <Button onClick={handleClick1} variant="contained" className='btn_one'>+</Button>
+            <Button onClick={handleClick2} variant="contained" className='btn_two'>-</Button>
             </Stack>
           </div>
         </form>
