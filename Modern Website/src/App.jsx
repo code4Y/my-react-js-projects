@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="container">
       <nav>
-        <img src="" className="logo" alt="imaged" />
+        <img src="https://cdn-icons-png.flaticon.com/512/471/471012.png" className="logo" alt="imaged" />
         <ul>
           <li>
             <a href="">Traval Guide</a>
@@ -17,7 +17,7 @@ function App() {
           </li>
         </ul>
         <button className="btn">
-          <img src="" alt="icon" /> Bookings
+          <img src="https://cdn-icons-png.flaticon.com/512/11510/11510915.png" alt="icon" /> Bookings
         </button>
       </nav>
       <div className="content">
@@ -27,10 +27,10 @@ function App() {
           Places to explore
         </h1>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          Welcome to our travel guide, your gateway to the world’s most breathtaking locations. 
+          We’re committed to making your journey unforgettable, filled with awe-inspiring 
+          landscapes and thrilling adventures. Let’s explore the wonders of our planet together. 
+          Happy travels!
         </p>
         <form>
           <input type="text" placeholder="Country Name" />
