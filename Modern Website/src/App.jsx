@@ -7,13 +7,13 @@ function App() {
         <img src="https://cdn-icons-png.flaticon.com/512/471/471012.png" className="logo" alt="imaged" />
         <ul>
           <li>
-            <a href="">Traval Guide</a>
+            <a href="#">Traval Guide</a>
           </li>
           <li>
-            <a href="">Famous Places</a>
+            <a href="#">Famous Places</a>
           </li>
           <li>
-            <a href="">Contact Us</a>
+            <a href="#">Contact Us</a>
           </li>
         </ul>
         <button className="btn">
@@ -27,9 +27,9 @@ function App() {
           Places to explore
         </h1>
         <p>
-          Welcome to our travel guide, your gateway to the world’s most breathtaking locations. 
-          We’re committed to making your journey unforgettable, filled with awe-inspiring 
-          landscapes and thrilling adventures. Let’s explore the wonders of our planet together. 
+          Welcome to our travel guide, your gateway to the world's most breathtaking locations. 
+          We're committed to making your journey unforgettable, filled with awe-inspiring 
+          landscapes and thrilling adventures. Let's explore the wonders of our planet together. 
           Happy travels!
         </p>
         <form>
