@@ -33,8 +33,8 @@ const AgeCalculator = () => {
             <h4>Date of Birth</h4>
             <input className='date' type="date" value={birthdate} onChange={e => setBirthdate(e.target.value)} />
             <div className='button_div'>
-              <button className='button-65' onClick={calculateAge}>Calculate Age</button>
-              <button className="button-65" onClick={resetCalculator}>
+              <button className='button' onClick={calculateAge}>Calculate Age</button>
+              <button className="button" onClick={resetCalculator}>
                 Reset
               </button>
             </div>
