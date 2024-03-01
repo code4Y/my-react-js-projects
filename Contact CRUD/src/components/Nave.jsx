@@ -1,9 +1,7 @@
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
+import { Container, Navbar, Nav } from 'react-bootstrap'; 
 import "./index.css";
  
-const Nav = () => {
+const Nave = () => {
   return (
     <>
       <section>
@@ -30,4 +28,4 @@ const Nav = () => {
   );
 };
  
-export default Nav;
+export default Nave;
