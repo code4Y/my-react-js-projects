@@ -1,5 +1,5 @@
-import { useState } from "react";
-import "./App.css";
+import React, { useState } from "react";
+import "../App.css";
 import axios from "axios";
  
 function Add() {
@@ -28,7 +28,7 @@ function Add() {
   return (
     <>
       <section className="form-section mt-3">
-        <h1 className="heading">Contact Management</h1>
+        <h1 className="heading">Conatct Manager 📞</h1>
  
         <form autoComplete="false" onSubmit={handlesubmit}>
           <div className="input-block">
@@ -72,7 +72,7 @@ function Add() {
               name="email"
               value={email}
               onChange={(e) => emailchange(e.target.value)}
-              placeholder="ziontutorialofficial@gmail.com"
+              placeholder="myname@email.com"
               tabIndex={-1}
               required
             />

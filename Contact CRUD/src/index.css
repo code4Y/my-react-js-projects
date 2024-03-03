@@ -5,20 +5,20 @@
   list-style: none;
   text-decoration: none;
 }
-  
+ 
 html,
 body {
   font-family: "Roboto", sans-serif;
   font-size: 10px;
   background-color: #f4f4f4;
 }
-  
+ 
 .heading {
   text-align: center;
   font-size: 2.75rem;
   margin-bottom: 1em;
 }
-  
+ 
 .form-section {
   min-height: 95vh;
   display: grid;
@@ -28,14 +28,14 @@ body {
   place-content: center;
   padding: 10rem;
 }
-  
+ 
 .input-block {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 2em 0 0.5em;
 }
-  
+ 
 .label {
   font-family: "Roboto";
   letter-spacing: 0.25px;
@@ -44,12 +44,12 @@ body {
   color: #000;
   margin-bottom: 0.35em;
 }
-  
+ 
 .requiredLabel {
   color: red;
   font-weight: bold;
 }
-  
+ 
 .input {
   padding: 1.35em 1em;
   width: 350px;
@@ -58,15 +58,15 @@ body {
   border: 1px solid rgb(130, 130, 130);
   border-radius: 0.25em;
 }
-  
+ 
 .submit-button-wrapper {
   display: flex;
 }
-  
+ 
 .float {
   justify-content: flex-end;
 }
-  
+ 
 .submit-button {
   margin-top: 1.75rem;
   background-color: #000;
@@ -78,12 +78,12 @@ body {
   font-weight: 500;
   border-radius: 4px;
 }
-  
+ 
 .button_wrapper {
   margin-bottom: 1rem;
   display: flex;
 }
-  
+ 
 .btn {
   margin-left: 10px;
   padding: 0.85em 2.2em;
