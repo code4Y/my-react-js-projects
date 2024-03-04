@@ -2,7 +2,6 @@ import Add from "./components/Add";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nave from "./components/NavComponent";
 import CheckboxTable from "./components/Contact";
-// import Deletemultiplerow from "./Deletemultiplerow";
  
 const App = () => {
   return (
