@@ -10,18 +10,15 @@ function Add() {
  
   const handlesubmit = (e) => {
     e.preventDefault();
-    // console.log({ id, username, email, address });
     const empdata = { id, username, email, address };
     axios
       .post("http://localhost:3003/employee", empdata)
       .then((res) => {
         console.log("res", res);
- 
         alert("saved successfully");
-        // window.location.reload();
       })
       .catch((err) => {
-        alert("some error is comiing ");
+        alert("some error occurred");
       });
   };
  
@@ -41,7 +38,6 @@ function Add() {
               name="id"
               value={id}
               onChange={(e) => idchange(e.target.value)}
-              disabled="disabled"
               placeholder="id"
               tabIndex={-1}
               required

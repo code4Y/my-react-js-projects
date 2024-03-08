@@ -113,12 +113,11 @@ function CheckboxTable() {
           {items.map((item) => (
             <tr key={item.id}>
               <td>
-              <Form.Check
-                type="checkbox"
-                onChange={(e) => handleCheckboxChange(e, item)}
-                checked={selectedItems.some((selectedItem) => selectedItem.id === item.id)}
-              />
-
+                <Form.Check
+                  type="checkbox"
+                  onChange={(e) => handleCheckboxChange(e, item)}
+                  checked={selectedItems.some((selectedItem) => selectedItem.id === item.id)}
+                />
               </td>
               <td>{item.id}</td>
               <td>{item.username}</td>
@@ -126,6 +125,7 @@ function CheckboxTable() {
               <td>{item.address}</td>
             </tr>
           ))}
+
         </tbody>
       </Table>
  
@@ -177,8 +177,7 @@ function CheckboxTable() {
             Save Changes
           </Button>
         </Modal.Footer>
-      </Modal>checked={selectedItems.some((selectedItem) => selectedItem.id === item.id)}
-
+      </Modal>
  
       <Modal show={showDeleteModal} onHide={() => setShowDeleteModal(false)}>
         <Modal.Header closeButton>
