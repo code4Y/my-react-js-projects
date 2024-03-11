@@ -18,14 +18,17 @@ function App() {
           </div>
           <div className="social_card">
             <div className="google">
-              <img src="./google.png" alt="" className="social_img" />
+              <img src="./google.png" alt="google_img" className="social_img" />
             </div>
             <div className="meta">
-              <img src="./meta.png" alt="" className="social_img" />
+              <img src="./meta.png" alt="meta_img" className="social_img" />
             </div>
             <div className="apple">
-              <img src="./apple.png" alt="" className="social_img" />
+              <img src="./apple.png" alt="apple_img" className="social_img" />
             </div>
+          </div>
+          <div className="card_button">
+            <button class="btn_login">Log in</button>
           </div>
         </div>
       </div>
