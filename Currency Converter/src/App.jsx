@@ -1,9 +1,10 @@
-import './App.css'
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Currency Converter</h1>
+    <div className="card">
+      <img src="./exchange.gif" width="60" alt="logo_img" />
+      <h1 className="text">Currency Converter</h1>
     </div>
   )
 }
