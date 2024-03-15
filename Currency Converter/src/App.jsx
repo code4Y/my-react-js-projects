@@ -7,6 +7,7 @@ function App() {
   const [amount, setAmount] = useState(1);
   const [fromCurrency, setFromCurrency] = useState('USD');
   const [toCurrency, setToCurrency] = useState('INR');
+  const [convertedAmount, setConvertedAmount] = useState(null);
 
   useEffect(() => {
     const apiUrl = `https://api.exchangerate-api.com/v4/latest/${fromCurrency}`;
@@ -21,6 +22,14 @@ function App() {
       });
 
   }, [fromCurrency]);
+
+  useEffect(() => {
+    const conversionRate = exchangeRates[toCurrency];
+    if(conversionRate) {
+      const converted = amount * conversionRate;
+      setConvertedAmount(converted.toFixed(2));
+    }
+  }, [amount, fromCurrency, toCurrency, exchangeRates]);
 
   const handleChange = (e) => {
     const {name, value} = e.target;
@@ -51,24 +60,32 @@ function App() {
         <div className="input_container">
           <label className="input_label">From Currency:</label>
           <select name="fromCurrency" className="input_field" value={fromCurrency} onChange={handleChange} >
-            <option value="inr">INR</option>
-            <option value="usd">USD</option>
-            <option value="eur">EUR</option>
+            {
+              Object.keys(exchangeRates).map(currency => (
+                <option key={currency} value={currency}>
+                  {currency}
+                </option>
+              ))
+            }
           </select>
         </div>
 
         <div className="input_container">
           <label className="input_label">To Currency:</label>
           <select name="toCurrency" className="input_field" value={toCurrency} onChange={handleChange} >
-            <option value="inr">INR</option>
-            <option value="usd">USD</option>
-            <option value="eur">EUR</option>
+            {
+              Object.keys(exchangeRates).map(currency => (
+                <option key={currency} value={currency}>
+                  {currency}
+                </option>
+              ))
+            }
           </select>
         </div>
       </div>
 
       <div className="output">
-        <h2>Converted Amount: <b>6743</b></h2>
+        <h2>Converted Amount: {convertedAmount}</h2>
       </div>
     </div>
   )
