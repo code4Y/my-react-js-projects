@@ -1,12 +1,51 @@
-export default function Trivia() {
+import { useEffect, useState } from "react"
+
+export default function Trivia({ 
+  data, 
+  setTimeOut, 
+  questionNumber, 
+  setQuestionNumber 
+}) {
+  
+  const [question, setQuestion] = useState(null);
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
+
+  useEffect(() => {
+    setQuestion(data[questionNumber - 1]);
+  }, [data, questionNumber]);
+
+  const handleClick = (a) => {
+    setSelectedAnswer(a);
+    setClassName("answer active");
+    delay(3000, () => {
+      setClassName(a.correct ? "answer correct" : "answer wrong");
+    });
+
+    delay(5000, () => {
+      if (a.correct) {
+        correctAnswer();
+        delay(1000, () => {
+          setQuestionNumber((prev) => prev + 1);
+          setSelectedAnswer(null);
+        });
+      } else {
+        wrongAnswer();
+        delay(1000, () => {
+          setTimeOut(true);
+        });
+      }
+    })
+  };
+
   return (
     <div className="trivia">
-      <div className="question">What's the best Web Development language?</div>
+      <div className="question">{question?.question}</div>
       <div className="answers">
-        <div className="answer">PHP</div>
-        <div className="answer">JavaScript</div>
-        <div className="answer">C++</div>
-        <div className="answer">Java</div>
+        {question?.answers.map((a) => (
+          <div className="answer" onClick={handleClick}>
+            {a.text}
+          </div>
+        ))}
       </div>
     </div>    
   )
