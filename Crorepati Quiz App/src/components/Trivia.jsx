@@ -2,9 +2,9 @@ import { useEffect, useState } from "react"
 
 export default function Trivia({ 
   data, 
-  setTimeOut, 
   questionNumber, 
-  setQuestionNumber 
+  setQuestionNumber, 
+  setTimeOut
 }) {
   
   const [question, setQuestion] = useState(null);
@@ -30,13 +30,11 @@ export default function Trivia({
 
     delay(5000, () => {
       if (a.correct) {
-        correctAnswer();
         delay(1000, () => {
           setQuestionNumber((prev) => prev + 1);
           setSelectedAnswer(null);
         });
       } else {
-        wrongAnswer();
         delay(1000, () => {
           setTimeOut(true);
         });
@@ -58,5 +56,5 @@ export default function Trivia({
         ))}
       </div>
     </div>    
-  )
+  );
 }

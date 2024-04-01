@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import './App.css'
 import Trivia from './components/Trivia';
 
@@ -76,7 +76,7 @@ function App() {
     },
   ];
 
-  const moneyPyramid = [
+  const moneyPyramid = useMemo(() => [
     {id:1, amount:"$ 100"},
     {id:2, amount:"$ 200"},
     {id:3, amount:"$ 300"},
@@ -92,7 +92,13 @@ function App() {
     {id:13, amount:"$ 250000"},
     {id:14, amount:"$ 500000"},
     {id:15, amount:"$ 1000000"},
-  ].reverse();
+  ].reverse(), []);
+
+  useEffect (() => {
+    questionNumber > 1 && 
+      setEarned(moneyPyramid.find((m) => m.id === questionNumber - 1).amount);
+  }, [moneyPyramid, questionNumber]);
+
   return (
     <div className="App">
       <div className="main">
@@ -102,10 +108,7 @@ function App() {
         <>
           <div className="top">
             <div className="timer">
-              {/* <Timer
-                setTimeOut={setTimeOut}
-                questionNumber={questionNumber}
-              /> */}
+              
             </div>
           </div>
           <div className="bottom">
@@ -130,7 +133,7 @@ function App() {
         </ul>
       </div>
     </div>
-  )
+  );
 }
 
 export default App
