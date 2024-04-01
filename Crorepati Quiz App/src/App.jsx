@@ -102,10 +102,10 @@ function App() {
         <>
           <div className="top">
             <div className="timer">
-              <Timer
+              {/* <Timer
                 setTimeOut={setTimeOut}
                 questionNumber={questionNumber}
-              />
+              /> */}
             </div>
           </div>
           <div className="bottom">

@@ -15,6 +15,12 @@ export default function Trivia({
     setQuestion(data[questionNumber - 1]);
   }, [data, questionNumber]);
 
+  const delay = (duration, callback) => {
+    setTimeout(() => {
+      callback();
+    }, duration);
+  };
+
   const handleClick = (a) => {
     setSelectedAnswer(a);
     setClassName("answer active");
@@ -43,7 +49,10 @@ export default function Trivia({
       <div className="question">{question?.question}</div>
       <div className="answers">
         {question?.answers.map((a) => (
-          <div className="answer" onClick={handleClick}>
+          <div
+            className={selectedAnswer === a ? className : "answer"}
+            onClick={() => !selectedAnswer && handleClick(a)}
+          >
             {a.text}
           </div>
         ))}
