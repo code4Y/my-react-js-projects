@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import './App.css'
 import Trivia from './components/Trivia';
+import Timer from './components/Timer';
 
 function App() {
   const [questionNumber, setQuestionNumber] = useState(1);
@@ -108,7 +109,10 @@ function App() {
         <>
           <div className="top">
             <div className="timer">
-              
+              <Timer 
+                setTimeOut={setTimeout}
+                questionNumber={questionNumber}
+              />
             </div>
           </div>
           <div className="bottom">
