@@ -1,10 +1,10 @@
 import "./formInput.css";
 
-const FormInput = () => {
+const FormInput = (props) => {
   return (
     <div className="formInput">
-      <label>Username</label>
-      <input />
+      {/*<label>{props.placeholder}</label>*/}
+      <input placeholder={props.placeholder} />
     </div>
   );
 }
